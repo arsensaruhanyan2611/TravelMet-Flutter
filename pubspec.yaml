@@ -1,0 +1,17 @@
+name: travelmet
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_google_places_autocomplete: 0.0.5
+  flutter_svg: 0.5.1
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true

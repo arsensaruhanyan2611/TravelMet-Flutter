@@ -10,21 +10,10 @@ class TravelMetApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new HomePage(),
-      initialRoute: '/login',
-      onGenerateRoute: _getRoute,
-    );
-  }
-
-  Route<dynamic> _getRoute(RouteSettings settings) {
-    if (settings.name != '/login') {
-      return null;
-    }
-
-    return MaterialPageRoute<void>(
-      settings: settings,
-      builder: (BuildContext context) => LoginPage(),
-      fullscreenDialog: true,
+      routes: <String, WidgetBuilder>{
+        'main': (BuildContext context) => new HomePage(),
+        'login': (BuildContext context) => new LoginPage(title: '')
+      },
     );
   }
 }

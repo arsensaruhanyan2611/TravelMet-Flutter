@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                   textColor: Colors.white,
                   child: Text('Sign in'),
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, 'main');
                   },
                 )
               ],
